@@ -1,0 +1,25 @@
+@use "../../../app/components/App/variables";
+.Toastify{
+  margin: 0 2rem!important;
+
+}
+.Toastify__toast-theme--light{
+  margin: 1rem;
+}
+.Toastify__toast{
+  border-radius: 10px !important;
+  box-shadow: variables.$box-shadow;
+
+}
+.Toastify__toast-container {
+
+
+  //margin: 1rem!important;
+  margin-bottom: 5rem!important;
+
+  .toast-style {
+    margin: 2rem!important;
+
+  }
+
+}

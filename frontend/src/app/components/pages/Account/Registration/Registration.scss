@@ -1,0 +1,20 @@
+@use 'src/app/components/App/variables';
+@use 'src/app/components/App/mixin';
+
+.account {
+  display: flex;
+  justify-content: center;
+
+  .card {
+    display: flex;
+    height: fit-content;
+  }
+
+  .card-body {
+    align-items: center;
+  }
+
+  .input, .btn {
+    margin-top: 1rem;
+  }
+}

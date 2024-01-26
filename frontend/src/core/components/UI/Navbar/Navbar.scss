@@ -1,0 +1,12 @@
+@use "../../../../app/components/App/variables";
+.drawer{
+  &-content{
+    background-color: variables.$bg__color;
+  }
+}
+.menu{
+  background-color: white;
+}
+.navbar{
+  background-color: variables.$bg__color;
+}

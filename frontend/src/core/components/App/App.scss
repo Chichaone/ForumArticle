@@ -1,0 +1,74 @@
+@use '../../../app/components/App/variables';
+@use "../Icons/fontawesome/scss/fontawesome.scss";
+@use "../Icons/fontawesome/scss/solid.scss";
+@use "../Icons/fontawesome/scss/brands.scss";
+
+html {
+  background-color: variables.$bg__color !important;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  color: variables.$dark !important;
+
+
+  &::-webkit-scrollbar {
+    width: 10px;
+
+    &-thumb {
+      border-radius: 10px !important;
+      background-color: rgba(0, 0, 0, 0.3) !important;
+    }
+  }
+}
+
+.btn {
+  border-radius: variables.$border-radius !important;
+}
+
+.custom {
+  &__iframe{
+    height: 100vh;
+  }
+  &__active {
+    border-radius: variables.$border-radius;
+    color: #2B2F33;
+    background-color: variables.$light__blue;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: none;
+    margin: 0.2rem;
+
+    &__icon {
+      color: #3755FA;
+      font-size: 24px;
+    }
+  }
+
+  &__inactive {
+    border-radius: variables.$border-radius;
+    color: #707A8A !important;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.2rem;
+
+    &__icon {
+      font-size: 24px;
+    }
+
+    :hover, :active {
+      background-color: variables.$light__blue;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+}
+
+.menu li > *:not(ul):not(.menu-title):not(details):active, .menu li > *:not(ul):not(.menu-title):not(details).active, .menu li > details > summary:active {
+  background-color: variables.$light__blue !important;
+}

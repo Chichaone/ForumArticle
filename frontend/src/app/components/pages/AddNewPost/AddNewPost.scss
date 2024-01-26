@@ -1,0 +1,14 @@
+@use 'src/app/components/App/variables';
+@use 'src/app/components/App/mixin';
+
+.posts {
+  .btn{
+    margin-top: 1.5rem;
+  }
+
+  &__site {
+    width: 100%;
+    height: 100% !important;
+    border-radius: variables.$border-radius;
+  }
+}
